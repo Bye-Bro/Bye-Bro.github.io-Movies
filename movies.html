@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="MUHAMET">
+    <title>Movie Info</title>
+    <link rel="icon" href="M-Movies.jpg" type="images/M-Movies.jpg">
+</head>
+<style>
+    body{
+        background-color: rgb(214, 140, 3);
+    }
+    .div1{
+        text-align: center;
+        font-size: x-large;
+        color:#ebc315;
+    }
+    .span1{
+        border: 2px solid;
+        background-color: red;
+    }
+    .div2{
+        border: 3px solid;
+        height: 260px;
+        width: 210px;
+        margin-top: 15px;
+    }
+    h2{
+        margin-top: -20px;
+    }
+    .darkknight{
+        height: 250px;
+        width: 200px;
+        margin-top: 5px;
+        margin-left: 5px;
+    }
+    .darkknight_1{
+        text-decoration: none;
+        color: black;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        font-size: x-large;
+        margin-left: 9px;
+    }
+    .div3{
+        border: 3px solid;
+        height: 260px;
+        width: 210px;
+        margin-left: 250px;
+        margin-top: -265px;
+    }
+    .mission{
+        height: 260px;
+        margin-left: 15px;
+    }
+    .mission_1{
+        text-decoration: none;
+        color: black;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        font-size: x-large;
+    }
+    .div4{
+        border: 3px solid;
+        height: 260px;
+        width: 210px;
+        margin-left: 500px;
+        margin-top: -265px;
+    }
+    .rushhour{
+        height: 255px;
+        margin-top: 2.5px;
+        margin-left: 13px;
+    }
+    .rushhour_1{
+        text-decoration: none;
+        color: black;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        font-size: x-large;
+        margin-left: 45px;
+    }
+    .div5{
+        border: 3px solid;
+        height: 260px;
+        width: 210px;
+        margin-left: 755px;
+        margin-top: -265px;
+    }
+    .the_mumy{
+        height: 250px;
+        margin-top: 5px;
+        margin-left: 20px;
+    }
+    .the_mumy_1{
+        text-decoration: none;
+        color: black;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        font-size: x-large;
+        margin-left: 35px;
+    }
+    .div6{
+        border: 3px solid;
+        height: 260px;
+        width: 210px;
+        margin-left: 1008px;
+        margin-top: -265px;
+    }
+    .rambo{
+        height: 250px;
+        margin-top: 5px;
+        margin-left: 12px;
+    }
+    .rambo_1{
+        text-decoration: none;
+        color: black;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        font-size: x-large;
+        margin-left: 28px;
+    }
+    .div7{
+        border: 3px solid;
+        height: 260px;
+        width: 210px;
+        margin-left: 1259px;
+        margin-top: -265px;
+    }
+    .avengers{
+        height: 250px;
+        margin-top: 5px;
+        margin-left: 17px;
+    }
+    .avengers_1{
+        text-decoration: none;
+        color: black;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        font-size: x-large;
+    }
+    .div8{
+        border: 3px solid;
+        height: 260px;
+        width: 210px;
+        margin-top: 80px;
+    }
+    .the_conjuring{
+        height: 250px;
+        margin-top: 5px;
+        margin-left: 20px;
+    }
+    .the_conjuring_1{
+        text-decoration: none;
+        color: black;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        font-size: x-large;
+        margin-left: 19px;
+    }
+    .div9{
+        border: 3px solid;
+        height: 260px;
+        width: 210px;
+        margin-left: 250px;
+        margin-top: -264px;
+    }
+    .anabelle{
+        height: 250px;
+        margin-top: 5px;
+        margin-left: 20px;
+    }
+    .anabelle_1{
+        text-decoration: none;
+        color: black;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        font-size: x-large;
+        margin-left: 35px;
+    }
+    .div10{
+        border: 3px solid;
+        height: 260px;
+        width: 210px;
+        margin-left: 500px;
+        margin-top: -264px;
+    }
+    .transformers{
+        height: 250px;
+        margin-top: 5px;
+        margin-left: 20px;
+    }
+    .transformers_1{
+        text-decoration: none;
+        color: black;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        font-size: x-large;
+        margin-left: 15px;
+    }
+    .div11{
+        border: 3px solid;
+        height: 260px;
+        width: 210px;
+        margin-left: 755px;
+        margin-top: -264px;
+    }
+    .superman{
+        height: 250px;
+        margin-top: 5px;
+        margin-left: 19px;
+    }
+    .superman_1{
+        text-decoration: none;
+        color: black;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        font-size: x-large;
+        margin-left: 30px;
+    }
+    .div12{
+        border: 3px solid;
+        height: 260px;
+        width: 210px;
+        margin-left: 1008px;
+        margin-top: -264px;
+    }
+    .the_last_airbender{
+        height: 250px;
+        margin-top: 5px;
+        margin-left: 20px;
+    }
+    .the_last_airbender_1{
+        text-decoration: none;
+        color: black;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        font-size: x-large;
+        margin-left: 1px;
+    }
+    .div13{
+        border: 3px solid;
+        height: 260px;
+        width: 210px;
+        margin-left: 1259px;
+        margin-top: -264px;
+    }
+    .furious7{
+        height: 250px;
+        margin-top: 5px;
+        margin-left: 15px;
+    }
+    .furious7_1{
+        text-decoration: none;
+        color: black;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        font-size: x-large;
+        margin-left: 50px;
+    }
+    .container{
+        background-color:orange;
+    }
+    .footer{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        font-size: larger;
+        color: rgb(247, 196, 129);
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        border: 4px solid;
+    }
+    .div2,
+    .div3,
+    .div4,
+    .div5,
+    .div6,
+    .div7,
+    .div8,
+    .div9,
+    .div10,
+    .div11,
+    .div12,
+    .div13 {
+        perspective: 1000px;
+        position: relative;
+    }
+
+    .card {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        transform-style: preserve-3d;
+        transition: transform 0.6s;
+    }
+
+    .card-front,
+    .card-back {
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        position: absolute;
+    }
+
+    .card-front {
+        z-index: 2;
+    }
+
+    .card-back {
+        transform: rotateY(180deg);
+    }
+
+    /* Show the back of the card on hover */
+    .div2:hover .card,
+    .div3:hover .card,
+    .div4:hover .card,
+    .div5:hover .card,
+    .div6:hover .card,
+    .div7:hover .card,
+    .div8:hover .card,
+    .div9:hover .card,
+    .div10:hover .card,
+    .div11:hover .card,
+    .div12:hover .card,
+    .div13:hover .card {
+        transform: rotateY(180deg);
+    }
+
+    /* Description box style */
+    .description-box {
+        background-color: rgba(0, 0, 0, 0.8);
+        color: #fff;
+        font-size: large;
+        padding: 10px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        pointer-events: none;
+        width: 180px;
+        text-align: center;
+        transition: opacity 0.2s ease;
+        height: 180px;
+        overflow: hidden;
+    }
+
+    /* Show the description box when hovering */
+    .div2:hover .description-box,
+    .div3:hover .description-box,
+    .div4:hover .description-box,
+    .div5:hover .description-box,
+    .div6:hover .description-box,
+    .div7:hover .description-box,
+    .div8:hover .description-box,
+    .div9:hover .description-box,
+    .div10:hover .description-box,
+    .div11:hover .description-box,
+    .div12:hover .description-box,
+    .div13:hover .description-box {
+        opacity: 1;
+    }
+    .trailer{
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        border: 2px solid;
+        background-color: yellow;
+        color: red;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size:larger;
+        border-radius: 15px;
+    }
+    .button_1{
+        text-decoration: none;
+        color: red;
+    }
+    .button_1:hover{
+        color: yellowgreen;
+        box-shadow: 2px 2px rgb(0, 0, 0);
+        border-style:outset;
+        border-radius: 8px;
+    }
+</style>
+<body>
+    <div class="container">
+
+    <div class="div1">
+        <span class="span1"><b><big>SOME OF THE BEST MOVIES AND THEIR RATING ALONG WITH THE DESCRIPTION</big></b></span>
+    </div>
+    <h2>Movie List:</h2>
+    <div class="div2">
+        <div class="card">
+        <div class="card-front">
+            <img class="darkknight" src="darkknight.jpg" alt="darkknight">
+        </div>
+        <div class="card-back">
+            <div class="description-box">
+                Gotham City has spawned many sinister characters,
+                but the "Joker" is different. With a brilliant mind and a grotesquely made-up face, 
+                he tries to wreak havoc on Batman's territory.
+            </div>
+        </div>
+        </div>
+        <br><br>
+        <a class="darkknight_1" href="https://www.google.com/search?gs_ssp=eJzj4tTP1TdIKinINTNg9OIvyUhVSEksylbIzstMzygBAHx7CSo&q=the+dark+knight&rlz=1C1GCEA_en__1057__1057&oq=the+dar&gs_lcrp=EgZjaHJvbWUqDAgCEC4YQxjUAhiKBTIGCAAQRRg5MgwIARAuGEMY1AIYigUyDAgCEC4YQxjUAhiKBTIJCAMQLhhDGIoFMgcIBBAuGIAEMgcIBRAuGIAEMgcIBhAuGIAEMgoIBxAuGNQCGIAEMgoICBAuGNQCGIAEMgcICRAAGI8C0gEINDc4OWowajeoAgCwAgA&sourceid=chrome&ie=UTF-8" target="_blank">The Dark Knight</a>
+    </div>
+    <div class="div3">
+        <div class="card">
+            <div class="card-front">
+                <img class="mission" src="mission.jpg" alt="mission">
+            </div>
+            <div class="card-back">
+            <div class="description-box">
+                Ethan Hunt and his team join forces with CIA assassin August Walker
+                to prevent a disaster of epic proportions. Arms dealer John Lark and a
+                group of terrorists plan to use three plutonium cores in a nuclear attack
+                on the Vatican, Jerusalem and Mecca, Saudi Arabia.
+                </div>
+            </div>
+            </div>
+        <br><br>
+        <a class="mission_1" href="https://www.google.com/search?rlz=1C1GCEA_en__1057__1057&sxsrf=AB5stBgLdOjUtxkzRdGLYHfQJdLqqPFEyg:1690642005923&q=Mission+Impossible+Fallout&stick=H4sIAAAAAAAAAONgFuLVT9c3NEw2Ny2vSjYr0ZLKTrbST8vMyQUT8cWpRZmpxVYgdvEiVinfzOLizPw8Bc_cgnwgKyknVcEtMScnv7RkBysjAHVyQ8ZZAAAA&sa=X&ved=2ahUKEwju9NGhlLSAAxXUh_0HHZGWDpcQgOQBegQIKhAO&biw=1600&bih=783&dpr=1" target="_blank">Mission Impossible</a>
+    </div>
+    <div class="div4">
+        <div class="card">
+            <div class="card-front">
+            <img class="rushhour" src="rushhour.jpg" alt="rushhour">
+        </div>
+        <div class="card-back">
+            <div class="description-box">
+                Inspector Lee is sent to Los Angeles by the Chinese Consul in the United
+                States. There he is supposed to find the kidnapped daughter of the diplomat.
+                The FBI gets wind of the scheme and in turn uses cocky cop James Carter to follow
+                Lee and monitor his actions.
+                </div>
+        </div>
+        </div>
+        <br><br>
+        <a class="rushhour_1" href="https://www.google.com/search?q=rush+hour&rlz=1C1GCEA_en__1057__1057&oq=ru&gs_lcrp=EgZjaHJvbWUqCQgAECMYJxiKBTIJCAAQIxgnGIoFMgwIARAuGEMY1AIYigUyBggCEEUYOTIMCAMQLhhDGNQCGIoFMgkIBBAuGEMYigUyCQgFEC4YQxiKBTIJCAYQLhhDGIoFMgkIBxAuGEMYigUyBwgIEC4YgAQyBwgJEAAYgATSAQc5MTVqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8&si=ACFMAn-pRAQ4unh1qRdDVEt60xZjYHHkBSWZo7J2F82UFFKjZJ6_H6boeugCp9aeWWQPIjqyQ_RyilDWXD3J89a9GHxNzyOjrHT5dOKhekFIjg601ZoZXQk%3D&ictx=1&ved=2ahUKEwiSr-vBl7SAAxUC_7sIHYCYB_oQ_coHegQIQxAB" target="_blank">Rush Hour</a>
+    </div>
+    <div class="div5">
+        <div class="card">
+            <div class="card-front">
+            <img class="the_mumy" src="images.jpg" alt="darkknight">
+        </div>
+        <div class="card-back">
+            <div class="description-box">
+                In 1719 BC, a forbidden love between the high priest Imhotep and the pharaoh's
+                lover is revealed, and a terrible curse is imposed on Imhotep. Almost four millennia
+                later, American archaeologist Richard Rick O'Connell is excavating at the site of the ancient
+                city and accidentally awakens the mummy. In doing so, he unleashes an ominous chaos that not only affects the grave site, but also the whole country.
+            </div>
+        </div>
+        </div>
+        <br><br>
+        <a class="the_mumy_1" href="https://www.google.com/search?gs_ssp=eJzj4tTP1TcwzMkzrTJg9OIsyUhVyC3Nza0EAEi9BuM&q=the+mummy&rlz=1C1GCEA_en__1057__1057&oq=the+mu&gs_lcrp=EgZjaHJvbWUqDAgBEC4YQxjUAhiKBTIGCAAQRRg5MgwIARAuGEMY1AIYigUyDAgCEC4YQxjUAhiKBTIJCAMQLhhDGIoFMgcIBBAuGIAEMgcIBRAuGIAEMgcIBhAAGIAEMgYIBxBFGD3SAQgyOTA5ajBqN6gCALACAA&sourceid=chrome&ie=UTF-8" target="_blank">The Mummy</a>
+    </div>
+    <div class="div6">
+        <div class="card">
+            <div class="card-front">
+            <img class="rambo" src="rambo.jpg" alt="rambo">
+        </div>
+        <div class="card-back">
+            <div class="description-box">
+                John Rambo has renounced fight and violence and lives as a skipper in the Thai
+                jungle. He makes his living by taking people across the river in his boat.
+            </div>
+        </div>
+        </div>
+        <br><br>
+        <a class="rambo_1" href="https://www.google.com/search?rlz=1C1GCEA_en__1057__1057&sxsrf=AB5stBiXfZR8tqw60UJ2wTpHyFkt796w7Q:1690643965968&q=John+Rambo&stick=H4sIAAAAAAAAAONgFuLUz9U3MDLMzk5R4gIxjZNzykvKtaSyk6300zJzcsFEfHFqUWZqsRWIXbyIlcsrPyNPISgxNyl_BysjAIqY9D9FAAAA&sa=X&ved=2ahUKEwihz6HIm7SAAxWigP0HHX5WC50QgOQBegQILRAK&biw=1600&bih=783&dpr=1" target="_blank">John Rambo</a>
+    </div>
+    <div class="div7">
+        <div class="card">
+            <div class="card-front">
+            <img class="avengers" src="avengers.jpg" alt="avengers">
+        </div>
+        <div class="card-back">
+            <div class="description-box">
+                With the help of remaining allies, the Avengers must assemble once
+                more in order to undo Thanos's actions and undo the chaos to the universe,
+                and no matter who they face... Avenge the fallen.
+            </div>
+        </div>
+        </div>
+        <br><br>
+        <a class="avengers_1" href="https://www.google.com/search?rlz=1C1GCEA_en__1057__1057&sxsrf=AB5stBjHKp4kRRmDPISOfmktVC_M_QYlzg:1690644254432&q=Avengers:+Endgame&stick=H4sIAAAAAAAAAONgFuLVT9c3NEwzysgxSraoVOLWz9U3MDQyS7LILtOSyk620k_LzMkFE_HFqUWZqcVWIHbxIlZBx7LUvPTUomIrBde8lPTE3NQdrIwAI6Wx4VEAAAA&sa=X&ved=2ahUKEwiZ_-fRnLSAAxUvnP0HHTPrCCwQgOQBegQIGhAK&biw=1600&bih=783&dpr=1" target="_blank">Avengers Endgame</a>
+    </div>
+    <div class="div8">
+        <div class="card">
+            <div class="card-front">
+            <img class="the_conjuring" src="the_conjuring.jpg" alt="the_conjuring">
+        </div>
+        <div class="card-back">
+            <div class="description-box">
+                A chilling murder case and a mysterious evil presence shakes paranormal
+                investigators Ed and Lorraine Warren to the core. Her current case is
+                about protecting the soul of a little boy. They enter an unknown world.
+            </div>
+        </div>
+        </div>
+        <br><br>
+        <a class="the_conjuring_1" href="https://www.google.com/search?rlz=1C1GCEA_en__1057__1057&sxsrf=AB5stBjCp0nmERdYfXHTNaWdXekomzm7IQ:1690644598800&q=Conjuring+3:+Im+Bann+des+Teufels&stick=H4sIAAAAAAAAAONgFuLVT9c3NEwyqzDJzslOVoJwMwxzTYuzkgu1pLKTrfTTMnNywUR8cWpRZmqxFYhdvIhVwTk_L6u0KDMvXcHYSsEzV8EpMS9PISW1WCEktTQtNad4BysjACrCKAdiAAAA&sa=X&ved=2ahUKEwiCx4L2nbSAAxXPhf0HHQPoAtAQgOQBegQIHxAI&biw=1600&bih=783&dpr=1" target="_blank">The Conjuring 3</a>
+    </div>
+    <div class="div9">
+        <div class="card">
+            <div class="card-front">
+            <img class="anabelle" src="anabelle.jpg" alt="anabelle">
+        </div>
+        <div class="card-back">
+            <div class="description-box">
+                Determined to keep Annabelle from wreaking more havoc, demonologists
+                Ed and Lorraine Warren bring the possessed doll to the locked artifacts
+                room in their home, placing her "safely".
+            </div>
+        </div>
+        </div>
+        <br><br>
+        <a class="anabelle_1" href="https://www.google.com/search?rlz=1C1GCEA_en__1057__1057&sxsrf=AB5stBjize0Rka13zrsaqFnFYabIZPreBw:1690645026927&q=Annabelle+3&si=ACFMAn9kuaQrWMX55hDmiYi8m5D5bpCmjMS4F7pwftJeLSehLr4tP52bSgNyczfIJw10zbUaU1t6EhrbHIjYX7pG2zzCC0UuoUaQV6AeVVV8GfUGtRcaYn-9PmbAyRYYygMqH7x6xczU0OFlEDnoKtp74M_ZjOFpDO-1dUVqyTAm6Am8LtvvcdY%3D&sa=X&ved=2ahUKEwiVvZXCn7SAAxXE1wIHHd5qBOAQ3LoBegQIDxAB&biw=1600&bih=783&dpr=1" target="_blank">Annabelle 3</a>
+    </div>
+    <div class="div10">
+        <div class="card">
+            <div class="card-front">
+            <img class="transformers" src="Transformars.jpg" alt="transformers">
+        </div>
+        <div class="card-back">
+            <div class="description-box">
+                The Autobots learn of a Cybertronian spacecraft hidden on the moon,
+                and race against the Decepticons to reach it and to learn its secrets.
+            </div>
+        </div>
+        </div>
+        <br><br>
+        <a class="transformers_1" href="https://www.google.com/search?rlz=1C1GCEA_en__1057__1057&sxsrf=AB5stBg3MxLSMLee0ZXCQ3zfQgZzmJH_rw:1690645953151&q=Transformers+3&stick=H4sIAAAAAAAAAONgFuLSz9U3SK5KyU1LVwKzLcyNCuKTtaSyk6300zJzcsFEfHFqUWZqsRWIXbyIlS-kKDGvOC2_KDe1qFjBeAcrIwCPRGYPSgAAAA&sa=X&ved=2ahUKEwiOzun7orSAAxV7if0HHX4EBewQgOQBegQIIRAI&biw=1600&bih=783&dpr=1" target="_blank">Transformers 3</a>
+    </div>
+    <div class="div11">
+        <div class="card">
+            <div class="card-front">
+            <img class="superman" src="superman.webp" alt="superman">
+        </div>
+        <div class="card-back">
+            <div class="description-box">
+                Drifter Clark Kent must keep his powers hidden from the world,
+                but when an evil general plans to destroy Earth, the Man of Steel
+                springs into action.
+            </div>
+        </div>
+        </div>
+        <br><br>
+        <a class="superman_1" href="https://www.google.com/search?gs_ssp=eJzj4tLP1TdIz0o2STE2YPTiKC4tSC3KTcwDAErSBv0&q=superman&rlz=1C1GCEA_en__1057__1057&oq=super&gs_lcrp=EgZjaHJvbWUqDAgFEC4YQxjUAhiKBTIGCAAQRRg5MgkIARAjGCcYigUyCQgCEC4YQxiKBTIMCAMQLhhDGNQCGIoFMgwIBBAuGEMY1AIYigUyDAgFEC4YQxjUAhiKBTIJCAYQLhhDGIoFMgkIBxAuGEMYigUyCQgIEC4YQxiKBTIHCAkQABiPAtIBCDY0MDVqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8&si=ACFMAn-pRAQ4unh1qRdDVEt60xZjkSYckZVOTqsb4XKASD67axcnbKGcjZdyxbZvAiQKLlw1Lg1dznCy3knkyEbZ25HXuF73fEtoK1onlJTdNIxHy2y4huw%3D&ictx=1&ved=2ahUKEwjvjZqCpbSAAxVmhf0HHfkUCoQQ_coHegQISxAD" target="_blank">Man Of Steel</a>
+    </div>
+    <div class="div12">
+        <div class="card">
+            <div class="card-front">
+            <img class="the_last_airbender" src="the_last_airbender.webp" alt="the_last_airbender">
+        </div>
+        <div class="card-back">
+            <div class="description-box">
+                A century has passed since the Fire Nation declared war on the other
+                three nations of Air, Water and Earth to conquer the world. Sokka and his
+                younger sister Katara, who live in the Southern Water Tribe, discover an
+                unusual iceberg. Breaking through the iceberg unleashes a beam of light, revealing a 12-year-old boy named Aang and his pet flying bison, Appa.
+            </div>
+        </div>
+        </div>
+        <br><br>
+        <a class="the_last_airbender_1" href="https://www.google.com/search?q=the+last+airbender+movie&rlz=1C1GCEA_en__1057__1057&sxsrf=AB5stBj6TtsFgoL9-k0PhIdPJik4yWlGqQ%3A1690647080999&ei=KDrFZPTLPJGbi-gPn8WOgAk&oq=the+last+airbender&gs_lp=Egxnd3Mtd2l6LXNlcnAiEnRoZSBsYXN0IGFpcmJlbmRlcioCCAAyChAAGEcY1gQYsAMyChAAGEcY1gQYsAMyChAAGEcY1gQYsAMyChAAGEcY1gQYsAMyChAAGEcY1gQYsAMyChAAGEcY1gQYsAMyChAAGEcY1gQYsAMyChAAGEcY1gQYsAMyChAAGIoFGLADGEMyChAAGIoFGLADGEMyChAAGIoFGLADGEMyChAAGIoFGLADGEMyDhAAGOQCGNYEGLAD2AEBMg4QABjkAhjWBBiwA9gBATIOEAAY5AIY1gQYsAPYAQEyEBAuGIoFGMgDGLADGEPYAQIyEBAuGIoFGMgDGLADGEPYAQIyEBAuGIoFGMgDGLADGEPYAQIyEBAuGIoFGMgDGLADGEPYAQJIiA1QAFgAcAF4AZABAJgBAKABAKoBALgBA8gBAOIDBBgAIEGIBgGQBhO6BgYIARABGAm6BgYIAhABGAg&sclient=gws-wiz-serp" target="_blank">The Last Airbender</a>
+    </div>
+    <div class="div13">
+        <div class="card">
+            <div class="card-front">
+            <img class="furious7" src="furious7.jpg" alt="furious7">
+        </div>
+        <div class="card-back">
+            <div class="description-box">
+                Deckard Shaw seeks revenge for his brother Owen and doesn't want anyone
+                in Dom's crew alive. First he targets federal agent Luke Hobbs for
+                information
+            </div>
+        </div>
+        </div>
+        <br><br>
+        <a class="furious7_1" href="https://www.google.com/search?rlz=1C1GCEA_en__1057__1057&sxsrf=AB5stBgRZzy0N7agf4cuJEQQCDBuMlqHaQ:1690647711325&q=Fast+%26+Furious+7&stick=H4sIAAAAAAAAAONgFuLSz9U3SK5KSiquUgKzy4qziiuKtKSyk6300zJzcsFEfHFqUWZqsRWIXbyIVcAtsbhEQU3BrbQoM7-0WMEcALBUrrlJAAAA&sa=X&ved=2ahUKEwjuhJjCqbSAAxXi_7sIHZ_-AowQ9OUBegQIIRAT&biw=1600&bih=783&dpr=1" target="_blank">Furious 7</a>
+    </div>
+        </div><br>
+        <h3 align="center" style="font-size:x-large;"><mark>AUTHOR MUHAMET</mark></h3>
+        
+        <button class="trailer"><a class="button_1" href="movies_trailer.html" target="_blank">CLICK HERE TO SE THE TRAILER'S OF THE MOVIES!</a></button>
+        <footer>
+        <span class="footer">Copyright &copy; All Rights Reserved.</span>
+        </footer>
+</body>
+</html>

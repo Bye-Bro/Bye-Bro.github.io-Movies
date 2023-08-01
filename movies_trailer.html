@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="M-Movies.jpg" type="image/jpg">
+    
+    <title>Trailer's</title>
+    <style>
+        /* Your custom styles for the movie selection menu */
+        .select-bar {
+            width: 300px;
+            padding: 10px;
+            font-size: 16px;
+            border: 2px solid #e60000;
+            border-radius: 5px;
+            background-color: #df6060;
+            outline: none;
+            cursor: pointer;
+        }
+        .select-bar option {
+            background-color: #000000;
+            color: #ff0000;
+        }
+        .select-bar option:hover {
+            background-color: #e00d0d;
+        }
+        .select-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 50px;
+        }
+        .select-bar {
+            width: 300px;
+            padding: 10px;
+            font-size: 16px;
+            border: 2px solid #e60000;
+            border-radius: 5px;
+            background-color: #df6060;
+            outline: none;
+            cursor: pointer;
+        }
+        .select-bar option {
+            background-color: #000000;
+            color: #ff0000;
+        }
+        .select-bar option:hover {
+            background-color: #e00d0d;
+        }
+        .select-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 50px;
+        }
+        h2 {
+            color: yellow;
+        }
+        body {
+            background-color: #000000;
+        }
+
+        /* Trailer's Sidebar styles */
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .sidebar {
+            width: 300px;
+            height: 100%;
+            position: fixed;
+            top: 0;
+            left: -300px;
+            background-color: #111;
+            padding-top: 60px;
+            transition: all 0.3s ease;
+        }
+        .sidebar.close {
+            left: 0;
+        }
+        .sidebar header {
+            padding: 20px;
+            background-color: #222;
+            font-size: 22px;
+            font-weight: 600;
+        }
+        .sidebar header .image-text {
+            display: flex;
+            align-items: center;
+        }
+        .sidebar header .image-text .image {
+            width: 40px;
+            height: 40px;
+            overflow: hidden;
+            margin-right: 10px;
+        }
+        .sidebar header .image-text .image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .sidebar header .image-text .text .name {
+            color: #fff;
+            display: block;
+        }
+        .sidebar header .image-text .text .profession {
+            color: #aaa;
+            display: block;
+            font-size: 12px;
+        }
+        .sidebar .menu-bar {
+            padding: 10px;
+        }
+        .sidebar .menu-bar .menu-links .nav-link {
+            margin-bottom: 10px;
+            list-style: none;
+        }
+        .sidebar .menu-bar .menu-links .nav-link a {
+            display: flex;
+            align-items: center;
+            color: #ddd;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+        .sidebar .menu-bar .menu-links .nav-link a .text {
+            margin-left: 10px;
+        }
+        .sidebar .menu-bar .menu-links .nav-link a .icon {
+            font-size: 18px;
+        }
+        .sidebar .menu-bar .menu-links .nav-link a:hover {
+            color: #fff;
+            background-color: #222;
+        }
+        .sidebar .bottom-content {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+        .sidebar .bottom-content li {
+            list-style: none;
+        }
+        .sidebar .bottom-content li a {
+            color: #ddd;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            transition: 0.3s;
+        }
+        .sidebar .bottom-content li a:hover {
+            color: #fff;
+            background-color: #222;
+        }
+        .sidebar .bottom-content .mode {
+            display: flex;
+            align-items: center;
+        }
+        .sidebar .bottom-content .mode .sun-moon {
+            margin-right: 10px;
+        }
+        .sidebar .bottom-content .mode .icon {
+            font-size: 20px;
+        }
+        .sidebar .bottom-content .mode .mode-text {
+            color: #aaa;
+            margin-right: 20px;
+        }
+        .sidebar .bottom-content .toggle-switch {
+            position: relative;
+            width: 50px;
+            height: 25px;
+            background-color: #555;
+            border-radius: 25px;
+            cursor: pointer;
+        }
+        .sidebar .bottom-content .toggle-switch .switch {
+            position: absolute;
+            top: 2px;
+            left: 2px;
+            width: 21px;
+            height: 21px;
+            background-color: #fff;
+            border-radius: 50%;
+            transition: 0.3s;
+        }
+        .sidebar .bottom-content .toggle-switch.dark .switch {
+            transform: translateX(26px);
+        }
+
+        /* Movie player section styles */
+        .movie-player {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 80px;
+        }
+        .movie-title {
+            color: black;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .movie-video {
+            width: 640px;
+            height: 360px;
+            background-color: #000;
+            margin-left: 550px;
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- Trailer's Sidebar -->
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <div class="text logo-text">
+                    <span class="name">Trailer's</span>
+                </div>
+            </div>
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+        <div class="menu-bar">
+            <div class="menu">
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="#" onclick="showSelectedMovie('DarkKnight_TrailerHD.mov')">
+                            <i class='bx bx-home-alt icon' ></i>
+                            <span class="text nav-text">The Dark Knight</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#" onclick="showSelectedMovie('Mission_ Impossible - Fallout (2018) - Official Trailer - Paramount Pictures.mp4')">
+                            <i class='bx bx-bar-chart-alt-2 icon' ></i>
+                            <span class="text nav-text">Mission Impossible Fallout</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#" onclick="showSelectedMovie('Rush Hour (1998) Official Trailer - Jackie Chan, Chris Tucker Movie HD.mp4')">
+                            <i class='bx bx-bell icon'></i>
+                            <span class="text nav-text">Rush Hour</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#" onclick="showSelectedMovie('videoplayback.mp4')">
+                            <i class='bx bx-bell icon'></i>
+                            <span class="text nav-text">The Mummy</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#" onclick="showSelectedMovie('Rambo (2008) - Official Trailer - Sylvester Stallone Action Movie HD.mp4')">
+                            <i class='bx bx-bell icon'></i>
+                            <span class="text nav-text">John Rambo</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#" onclick="showSelectedMovie('avengers.mp4')">
+                            <i class='bx bx-bell icon'></i>
+                            <span class="text nav-text">Avengers Endgame</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#" onclick="showSelectedMovie('CONJURING 3 Official Trailer (2021).mp4')">
+                            <i class='bx bx-bell icon'></i>
+                            <span class="text nav-text">Conjuring 3</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#" onclick="showSelectedMovie('ANNABELLE COMES HOME - Official Trailer.mp4')">
+                            <i class='bx bx-bell icon'></i>
+                            <span class="text nav-text">Annabelle 3</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#" onclick="showSelectedMovie('Transformers 3 - Dark of the Moon _ [HD] OFFICIAL trailer #3 US (2011).mp4')">
+                            <i class='bx bx-bell icon'></i>
+                            <span class="text nav-text">Transformers 3</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#" onclick="showSelectedMovie('Man of Steel - Official Trailer 3 [HD].mp4')">
+                            <i class='bx bx-bell icon'></i>
+                            <span class="text nav-text">Man of Steel</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#" onclick="showSelectedMovie('the_last_airbender.mp4')">
+                            <i class='bx bx-bell icon'></i>
+                            <span class="text nav-text">The Last Airbender</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#" onclick="showSelectedMovie('Furious 7 - Official Trailer (HD).mp4')">
+                            <i class='bx bx-bell icon'></i>
+                            <span class="text nav-text">Furious 7</span>
+                        </a>
+                    </li>
+                    <!-- Add more movie options here -->
+                </ul>
+            </div>
+            <div class="bottom-content">
+                <li class="">
+                    <a href="#">
+                        <i class='bx bx-log-out icon' ></i>
+                        <span class="text nav-text">Logout</span>
+                    </a>
+                </li>
+
+                <li class="mode">
+                    <div class="sun-moon">
+                        <i class='bx bx-moon icon moon'></i>
+                        <i class='bx bx-sun icon sun'></i>
+                    </div>
+                    <span class="mode-text text">Dark mode</span>
+
+                    <div class="toggle-switch">
+                        <span class="switch"></span>
+                    </div>
+                </li>
+                
+            </div>
+        </div>
+    </nav>
+    <div class="movie-player" id="moviePlayer" style="display: none;">
+        <h3 class="movie-title">Now Playing: <span id="movieTitle"></span></h3>
+        <video class="movie-video" controls></video>
+        <button onclick="hideMoviePlayer()">Close</button>
+    </div>
+
+    <script>
+            function showSelectedMovie(movieSrc) {
+            if (movieSrc) {
+                const moviePlayer = document.getElementById('moviePlayer');
+                const movieTitle = document.getElementById('movieTitle');
+                const videoElement = moviePlayer.querySelector('.movie-video');
+
+                movieTitle.textContent = getMovieTitle(movieSrc);
+                videoElement.src = movieSrc;
+                moviePlayer.style.display = 'block';
+            }
+        }
+
+        function hideMoviePlayer() {
+            const moviePlayer = document.getElementById('moviePlayer');
+            const videoElement = moviePlayer.querySelector('.movie-video');
+            videoElement.pause();
+            moviePlayer.style.display = 'none';
+        }
+
+        function getMovieTitle(movieSrc) {
+            // Extract the movie title from the file name or URL
+            const parts = movieSrc.split('/');
+            const filename = parts[parts.length - 1];
+            const title = filename.split('.')[0];
+            return title.replace(/_/g, ' '); // Replace underscores with spaces
+        }
+    </script>
+    <!-- Trailer Popup -->
+    <div class="trailer-popup" id="trailerPopup" style="display: none;">
+        <video class="popup-video" height="400" controls></video>
+        <button onclick="hideTrailerPopup()">Close</button>
+    </div>
+</body>
+</html>
